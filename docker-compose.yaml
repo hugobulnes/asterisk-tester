@@ -1,0 +1,8 @@
+version: '2.0'
+services:
+    asterisk:
+        build: .
+        ports:
+            - "5060:5060"
+        volumes:
+            - ../asterisk:/etc/asterisk
